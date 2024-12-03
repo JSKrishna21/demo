@@ -1,0 +1,183 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="tamplate.css">
+</head> 
+<body>
+       <form class="form">
+    <div class= "header">
+         <h1> Client Details</h1>
+         <p>Enter the details of all incoming clients.</p>
+    </div>
+    <div class="parentclass">
+      <div class="leftdiv">
+	<label for="client">client name*</label>
+      </div>
+      <div class="rightdiv">
+         <input type="text" class="inputclass" id="client" name="client" required maxlength="50" min="5">
+      </div>
+    </div> 
+<div class="parentclass">
+<div class="leftdiv">
+<label for="company">company*</label>
+</div>
+ <div class="rightdiv">
+<input type="text" class="inputclass" id="company" name="company" required maxlength="50" min="5">
+</div>
+</div> 
+<div class="parentclass">
+<div class="leftdiv">
+<label for="title">title</label>
+</div>
+ <div class="rightdiv">
+<input type="text" class="inputclass" id="title" name="title" maxlength="50" min="5">
+</div>
+</div> 
+<div class="parentclass">
+<div class="leftdiv">
+<label for="department">Department*</label></div>
+ <div class="rightdiv">
+<select id="department" class="inputclass" required>
+          <option value="select">Select</option>
+          <option value="sales">Hr</option>
+          <option value="support">devlop</option>
+        </select>
+</div>
+</div> 
+<div class="parentclass">
+<div class="leftdiv">
+<lable for="content-method">prefered contact method:</label>
+</div>
+ <div class="rightdiv">
+      <label><input type="radio" id="Email" name="content-method">email</input></label>
+      <label><input type="radio" id="Phone"  name="content-method">phone</input></label>
+
+</div>
+</div> 
+<div class="parentclass">
+	<div class="leftdiv">
+		<label for="address">Company Address <span> * </span></label>
+        </div>
+        <div class="rightdiv">
+    		<input type="text" id="address" name="address" class="inputclass" required min="5" maxlength="50">
+     		<span class="placeholder">Street Address</span>
+     	</div>
+</div>
+
+<div class="parentclass">
+	<div class="leftdiv">
+		<label for="address1"></span></label>
+        </div>
+        <div class="rightdiv">
+    		<input type="text" id="address1" name="address1" class="inputclass" required min="5" maxlength="50">
+     		<span class="placeholder">Address Line 2</span>
+     	</div>
+</div>
+
+
+<div class="parentclass">
+	<div class="leftdiv">
+		<label></label>
+	</div>
+	<div class="rightdiv">
+          <div class="row">
+		<div style="width:45%">
+			 <input type="text" id="city" name="city" class="inputclass" required min="5" maxlength="50"> 
+      			 <span class="placeholder">City</span>
+		</div>
+			<div style="width:50%">
+			 	<input type="text" id="state" name="state" class="inputclass" required min="5" maxlength="50"> 
+      			 	<span class="placeholder">State</span>
+		 	</div>
+	  	</div>
+  	 </div>
+</div>
+
+<div class="parentclass">
+	<div class="leftdiv">
+		<label></label>
+	</div>
+	<div class="rightdiv">
+                <div class="row">
+		       <div style="width:45%">
+			         <input type="text" id="zipcode" name="zipcode" class="inputclass" required min="5" maxlength="50"> 
+      			          <span class="placeholder">Zipcode</span>
+		       </div>
+		<div style="width:50%">
+			 <select  id="department" class="inputclass">
+				<option VALUE="select">Select</option>
+				<option VALUE="asia">ASIA</option>
+				<option VALUE="africa">AFRICA</option>
+				<option VALUE="america">AMERICA</option>
+				<option VALUE="japan">JAPAN</option>
+				<option VALUE="china">CHINA</option>
+			 </select>
+      			 <span class="placeholder">Country</span>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="parentclass">
+	<div class="leftdiv">
+		<label for="website">Company Website</label>
+	</div>
+	<div class="rightdiv">
+		<input type="url" class="inputclass" id=website" name="website" maxlength="50" min="5">
+	</div>
+</div>
+
+ 
+<div class="parentclass">
+	<div class="leftdiv">
+		<label for="logo">Company Logo</label>
+	</div>
+ 	<div class="rightdiv">
+		<input type="file" id="logo" name="logo"  accept= " .jpg .svg .png"  required>
+	</div>
+</div> 
+
+<div class="parentclass">
+<div class="leftdiv">
+ <label for="hours">Working Hours</label>
+</div>
+ <div class="rightdiv">
+<input type="time" class="inputclass" id="hours" name="hours"  required>
+</div>
+</div> 
+<div class="parentclass">
+<div class="leftdiv">
+ <label for="days">Working Days</label>
+</div>
+ <div class="rightdiv">
+<input type="number" class="inputclass" id="days" name="days"  min="0" required>
+</div>
+</div> 
+
+<div class="parentclass">
+<div class="leftdiv">
+ <label for="billing-cycle">Billing Cycle</label>
+</div>
+ <div class="rightdiv">
+<input type="date" class="inputclass" id="date" name="dater" maxlength="50" min="5" required>
+<span class="placeholder">dd-MM-yyyy</span>	
+</div>
+</div> 
+<div class="parentclass">
+<div class="leftdiv">
+ <label for="additional-info">Additional Information</label>
+
+</div>
+ <div class="rightdiv">
+<textarea name="additional-info" rows="4" cols="50" class="inputclass" required min="5" max="100"></textarea>
+</div>
+</div> 
+
+      <div class="submit-button">
+       <button type="submit">Submit</button>
+      </div>
+<br>
+</div>	
+</form>
+</body>
+</html>
